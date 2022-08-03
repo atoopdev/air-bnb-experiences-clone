@@ -12,6 +12,7 @@ export default function Card(){
         </div>
         {/* end review div */}
         <p className="experience-heading">Life lessons with Katie Zaferes</p>
+        <p className="experience-price"><span className="bold">From $136</span> / person</p>
         </div>
 
     </div>

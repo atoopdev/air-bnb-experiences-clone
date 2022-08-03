@@ -18,6 +18,7 @@ h1,h2,h3, p{
 
 img{
   max-width: 100%;
+  
 }
 
 section{
@@ -80,7 +81,8 @@ font-weight: 300;
 
 .experience-img{
 border-radius: 9px;
-height: 235px;
+/* height: 235px; */
+width: 176px;
 }
 
 .star-img{
@@ -100,3 +102,15 @@ height: 235px;
   padding-left: 5px;
 }
 
+.experience-heading{
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.experience-price{
+  margin-top: 10px;
+}
+
+.bold{
+  font-weight: 700;
+}
