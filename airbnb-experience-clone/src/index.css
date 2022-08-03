@@ -77,17 +77,24 @@ font-weight: 300;
 .experience-listing{
   display: flex;
   flex-direction: column;
+  width: 175px;
+  font-size: 12px;
 }
 
 .experience-img{
 border-radius: 9px;
 /* height: 235px; */
-width: 176px;
+width: 100%;
 }
 
 .star-img{
   /* margin-top: 10px; */
-  height: 20px;
+  height: 14px;
+  margin-right: 5px;
+}
+
+.grey{
+  color: #918E9B;
 }
 
 .review-div{
@@ -104,7 +111,6 @@ width: 176px;
 
 .experience-heading{
   margin-top: 10px;
-  font-size: 16px;
 }
 
 .experience-price{
