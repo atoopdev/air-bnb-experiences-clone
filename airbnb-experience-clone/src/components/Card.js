@@ -2,7 +2,7 @@ import React from "react"
 import photoexperience from "../images/katie-zaferes.png"
 import star from "../images/star.png"
 
-export default function Card(){
+export default function Card(props){
     return <div className="experience-photos">
         <div className="experience-listing">
         <img className="experience-img" src={photoexperience} alt="Katie Zaferes in swimsuit/cap"></img>
