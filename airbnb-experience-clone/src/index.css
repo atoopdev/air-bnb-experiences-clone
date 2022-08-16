@@ -124,6 +124,7 @@ width: 100%;
 /* cat contact list  */
 
 .contacts {
+  margin-top: 40px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;

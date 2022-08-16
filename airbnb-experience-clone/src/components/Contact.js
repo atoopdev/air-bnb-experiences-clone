@@ -1,77 +1,27 @@
 import React from "react"
-import felixcat from "../images/felix.png"
-import fluffycat from "../images/fluffykins.png"
-import whiskerscat from "../images/mr-whiskerson.png"
-import pumpkincat from "../images/pumpkin.png"
+// import felixcat from "../images/felix.png"
+// import fluffycat from "../images/fluffykins.png"
+// import whiskerscat from "../images/mr-whiskerson.png"
+// import pumpkincat from "../images/pumpkin.png"
 import mailicon from "../images/mail-icon.png"
 import phoneicon from "../images/phone-icon.png"
 
 export default function Contact(props){
-     return <div className="contacts">
-
-        <div className="contact-card">
-            <img src={whiskerscat}></img>
-            <h3>Mr. Whiskerson</h3>
+    console.log(props)
+     return <div className="contact-card">
+            <img src={props.img}/>
+            <h3>{props.name}</h3>
 
             <div classname="info-group">
                 <img src={phoneicon}></img>
-                <p>555-555-5555</p>
+                <p>{props.phone}</p>
             </div>
             {/* end info group */}
             <div className="info-group">
                 <img src={mailicon}></img>
-                <p>mr.whiskers@catnip.meow</p>
+                <p>{props.email}</p>
             </div>
-
             </div>
+            {/* end card */}
 
-            <div className="contact-card">
-            <img src={fluffycat}></img>
-            <h3>Fluffy</h3>
-
-            <div classname="info-group">
-                <img src={phoneicon}></img>
-                <p>555-555-5555</p>
-            </div>
-            {/* end info group */}
-            <div className="info-group">
-                <img src={mailicon}></img>
-                <p>fluffy@catnip.meow</p>
-            </div> 
-        </div>
-        {/* end contact card */}
-
-        <div className="contact-card">
-            <img src={felixcat}></img>
-            <h3>Felix</h3>
-
-            <div classname="info-group">
-                <img src={phoneicon}></img>
-                <p>555-555-5555</p>
-            </div>
-            {/* end info group */}
-            <div className="info-group">
-                <img src={mailicon}></img>
-                <p>felix@catnip.meow</p>
-            </div> 
-        </div>
-        {/* end contact card */}
-
-        <div className="contact-card">
-            <img src={pumpkincat}></img>
-            <h3>Pumpkin</h3>
-
-            <div classname="info-group">
-                <img src={phoneicon}></img>
-                <p>555-555-5555</p>
-            </div>
-            {/* end info group */}
-            <div className="info-group">
-                <img src={mailicon}></img>
-                <p>pumpkin@catnip.meow</p>
-            </div> 
-        </div>
-        {/* end contact card */}
-    </div>
-    // end contacts div
 }
