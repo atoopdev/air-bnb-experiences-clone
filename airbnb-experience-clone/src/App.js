@@ -1,7 +1,8 @@
 import logo from './logo.svg';
 import Top from "./components/Top"
 import Card from "./components/Card"
-import Joke from "./components/Joke"
+import photoexperience from "./images/katie-zaferes.png"
+// import Joke from "./components/Joke"
 // import Contact from "./components/Contact"
 // import felixcat from "./images/felix.png"
 // import fluffycat from "./images/fluffykins.png"
@@ -14,9 +15,17 @@ function App() {
   return (
    <div>
     <Top />
-    <Card />
+    <Card 
+      img={photoexperience}
+      rating={5}
+      reviewcount={6}
+      country="USA"
+      title="Life Lessons with Katie Zaferes"
+      price={136}
+      
+      />
 
-    
+
     {/* <Joke 
       setup = "I got my daughter a fridge for her birthday"
       punchline = "I can't wait to see her face light up when she opens it"
