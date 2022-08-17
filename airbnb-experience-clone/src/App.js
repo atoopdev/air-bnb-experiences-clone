@@ -7,6 +7,8 @@ import fluffycat from "./images/fluffykins.png"
 import whiskerscat from "./images/mr-whiskerson.png"
 import pumpkincat from "./images/pumpkin.png"
 
+// note had to find custom image solution - https://delftstack.com/howto/react/react-img-src/
+
 function App() {
   return (
    <div>
