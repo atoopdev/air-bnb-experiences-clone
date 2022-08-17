@@ -15,16 +15,22 @@ function App() {
    <div>
     <Top />
     <Card />
-    <Joke 
+
+    
+    {/* <Joke 
       setup = "I got my daughter a fridge for her birthday"
-      punchline = "I can't wait to see her face light up when she opens it"/>
+      punchline = "I can't wait to see her face light up when she opens it"
+      // nonstring props example
+      number={1}
+      />
 
-<Joke 
+      <Joke 
       setup = "How did the hacker escape the police?"
-      punchline = "He just ransomware!"/>
+      punchline = "He just ransomware!"
+      number={2}/>
 
-<Joke 
-      punchline = "I am just a punchline"/>
+      <Joke 
+      punchline = "I am just a punchline"/> */}
 
     {/* <Contact 
     img = {whiskerscat}
