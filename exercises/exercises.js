@@ -1,12 +1,10 @@
 const names = ["aliCe", "bOb", "charlie", "david"]
 
-const map1 = names.map(Capitalize)
-console.log(map1)
-
-function Capitalize(word){
+// const map1 = names.map(Capitalize)
+const map1 = names.map((name) =>{
     console.log("In Capitalize")
     // convert to all lower case
-    const lower = word.toLowerCase()
+    const lower = name.toLowerCase()
     console.log(lower)
 
     // grab first letter
@@ -26,3 +24,6 @@ function Capitalize(word){
     console.log(capitalizedWord)
     return capitalizedWord
 }
+
+)
+console.log(map1)
