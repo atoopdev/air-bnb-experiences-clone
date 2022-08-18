@@ -8,9 +8,9 @@ export default function Card(props){
         <img className="experience-img" src={props.img} alt="Katie Zaferes in swimsuit/cap"></img>
         <div className="review-div">
         <img className="star-img" src={star} alt="star"></img>
-            <span>{props.rating}</span>
-            <span className="grey"> ({props.reviewcount}) * </span>
-            <span className="grey"> {props.country}</span>
+            <span className="rating">{props.rating}</span>
+            <span className="review-count grey"> ({props.reviewcount}) * </span>
+            <span className="country grey"> {props.country}</span>
             
         </div>
         {/* end review div */}

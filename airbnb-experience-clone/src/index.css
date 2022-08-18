@@ -105,6 +105,18 @@ width: 100%;
   margin-top: 10px;
 }
 
+.rating{
+  margin-right: 5px;
+}
+
+.review-count{
+
+}
+
+.country{
+  margin-left: 5px;
+}
+
 .review-details{
   padding-left: 5px;
 }
