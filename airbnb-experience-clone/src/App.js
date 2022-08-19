@@ -12,12 +12,15 @@ import photoexperience from "./images/katie-zaferes.png"
 // note had to find custom image solution - https://delftstack.com/howto/react/react-img-src/
 
 function App() {
+  const colors = ["red", "orange", "yellow"]
+
+
   return (
    <div>
     <Top />
     <Card 
       img={photoexperience}
-      rating={5}
+      rating="5.0"
       reviewcount={6}
       country="USA"
       title="Life Lessons with Katie Zaferes"

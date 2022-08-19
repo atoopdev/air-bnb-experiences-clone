@@ -2,6 +2,8 @@ import React from "react"
 import photoexperience from "../images/katie-zaferes.png"
 import star from "../images/star.png"
 
+// can add images like {`path${imgnamrvar}`}
+
 export default function Card(props){
     return <div className="experience-photos">
         <div className="experience-listing">
