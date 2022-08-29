@@ -2,7 +2,8 @@ import logo from './logo.svg';
 import Top from "./components/Top"
 import Card from "./components/Card"
 import photoexperience from "./images/katie-zaferes.png"
-// import Joke from "./components/Joke"
+import Joke from "./components/Joke"
+import jokesData from "./jokesData"
 // import Contact from "./components/Contact"
 // import felixcat from "./images/felix.png"
 // import fluffycat from "./images/fluffykins.png"
@@ -12,8 +13,11 @@ import photoexperience from "./images/katie-zaferes.png"
 // note had to find custom image solution - https://delftstack.com/howto/react/react-img-src/
 
 function App() {
-  const colors = ["red", "orange", "yellow"]
+  const jokeElements = jokesData.map((joke) =>{
+    return <Joke setup={joke.setup} punchline={joke.punchline} />
+  })
 
+  console.log(jokeElements)
 
   return (
    <div>
@@ -25,9 +29,9 @@ function App() {
       country="USA"
       title="Life Lessons with Katie Zaferes"
       price={136}
-      
       />
-
+    <div>{jokeElements}</div>
+  
 
     {/* <Joke 
       setup = "I got my daughter a fridge for her birthday"
