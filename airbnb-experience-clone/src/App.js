@@ -3,7 +3,8 @@ import Top from "./components/Top"
 import Card from "./components/Card"
 import photoexperience from "./images/katie-zaferes.png"
 import Joke from "./components/Joke"
-import jokesData from "./jokesData"
+// import jokesData from "./jokesData"
+import CardData from "./data"
 // import Contact from "./components/Contact"
 // import felixcat from "./images/felix.png"
 // import fluffycat from "./images/fluffykins.png"
@@ -13,24 +14,31 @@ import jokesData from "./jokesData"
 // note had to find custom image solution - https://delftstack.com/howto/react/react-img-src/
 
 function App() {
-  const jokeElements = jokesData.map((joke) =>{
-    return <Joke setup={joke.setup} punchline={joke.punchline} />
+  // const jokeElements = jokesData.map((joke) =>{
+  //   return <Joke setup={joke.setup} punchline={joke.punchline} />
+  // })
+  
+  // console.log(jokeElements)
+
+  const cardElements = CardData.map((card)=>{
+    return <Card img={card.coverImg} rating={card.stats.rating} reviewcount={card.stats.reviewCount}  country={card.location} title={card.title} price = {card.price}/>
   })
 
-  console.log(jokeElements)
+  // console.log("cardElements: ", cardElements)
 
   return (
    <div>
     <Top />
-    <Card 
+    <div className="experience-photos">{cardElements}</div>
+    {/* <Card 
       img={photoexperience}
       rating="5.0"
       reviewcount={6}
       country="USA"
       title="Life Lessons with Katie Zaferes"
       price={136}
-      />
-    <div>{jokeElements}</div>
+  />*/}
+    {/* <div>{jokeElements}</div> */}
   
 
     {/* <Joke 

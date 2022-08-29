@@ -2,12 +2,12 @@ import React from "react"
 import photoexperience from "../images/katie-zaferes.png"
 import star from "../images/star.png"
 
+
 // can add images like {`path${imgnamrvar}`}
 
 export default function Card(props){
-    return <div className="experience-photos">
-        <div className="experience-listing">
-        <img className="experience-img" src={props.img} alt="Katie Zaferes in swimsuit/cap"></img>
+    return <div className="experience-listing">
+        <img className="experience-img" src={props.img} alt={props.title}></img>
         <div className="review-div">
         <img className="star-img" src={star} alt="star"></img>
             <span className="rating">{props.rating}</span>
@@ -21,6 +21,5 @@ export default function Card(props){
         </div>
         {/* holds one photo */}
 
-    </div>
     // holds all photos
 }
