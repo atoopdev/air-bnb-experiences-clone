@@ -20,8 +20,9 @@ function App() {
   
   // console.log(jokeElements)
 
+  //note assign key to eliminate key error
   const cardElements = CardData.map((card)=>{
-    return <Card img={card.coverImg} rating={card.stats.rating} reviewcount={card.stats.reviewCount}  country={card.location} title={card.title} price = {card.price}/>
+    return <Card key={card.id}img={card.coverImg} rating={card.stats.rating} reviewcount={card.stats.reviewCount}  country={card.location} title={card.title} price = {card.price}/>
   })
 
   // console.log("cardElements: ", cardElements)
