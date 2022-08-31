@@ -70,6 +70,9 @@ font-weight: 300;
 .experience-photos{
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
   background-color: #FFFFFF;
   padding-top: 50px;
 }
@@ -77,9 +80,10 @@ font-weight: 300;
 .experience-listing{
   display: flex;
   flex-direction: column;
+  flex: 0 0 auto;
   width: 175px;
   font-size: 12px;
-  margin-right: 5px;
+  /* margin-right: 5px; */
 }
 
 .experience-img{
