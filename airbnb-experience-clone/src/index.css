@@ -128,10 +128,14 @@ width: 100%;
 
 .experience-heading{
   margin-top: 10px;
+  margin-bottom: 5px;
+  line-height: 1.25;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .experience-price{
-  margin-top: 10px;
+  margin-top: auto;
 }
 
 .bold{
