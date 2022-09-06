@@ -83,7 +83,8 @@ font-weight: 300;
   flex: 0 0 auto;
   width: 175px;
   font-size: 12px;
-  /* margin-right: 5px; */
+  /* allows sold out badge to be displayed */
+  position: relative;
 }
 
 .experience-img{
@@ -134,6 +135,16 @@ width: 100%;
   text-overflow: ellipsis;
 }
 
+/* renders sold out badge */
+.experience-status{
+  position:absolute;
+  top: 6px;
+  left: 6px;
+  background-color: white;
+  padding: 5px 7px;
+  border-radius: 2px;
+  font-weight: bold;
+}
 .experience-price{
   margin-top: auto;
 }

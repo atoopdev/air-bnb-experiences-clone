@@ -6,7 +6,16 @@ import star from "../images/star.png"
 // can add images like {`path${imgnamrvar}`}
 
 export default function Card(props){
+    let badgeText
+    if(props.openSpots===0){
+        badgeText = "Sold-Out"
+    } else if (props.country === "Online"){
+        badgeText = "Online"
+    }
+
     return <div className="experience-listing">
+        {/* conditional display if there is badge text*/}
+        {badgeText && <div className="experience-status">{badgeText}</div>}
         <img className="experience-img" src={props.img} alt={props.title}></img>
         <div className="review-div">
         <img className="star-img" src={star} alt="star"></img>
