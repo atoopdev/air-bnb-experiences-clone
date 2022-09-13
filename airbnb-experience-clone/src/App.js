@@ -21,11 +21,15 @@ function App() {
   // console.log(jokeElements)
 
   //note assign key to eliminate key error
+  // pass entire object to Card()
   const cardElements = CardData.map((card)=>{
-    return <Card key={card.id}img={card.coverImg} rating={card.stats.rating} reviewcount={card.stats.reviewCount}  country={card.location} title={card.title} price = {card.price} openSpots={card.openSpots}/>
+    return <Card 
+    key={card.id}
+    card={card}/>
   })
 
   // console.log("cardElements: ", cardElements)
+
 
   return (
    <div>
